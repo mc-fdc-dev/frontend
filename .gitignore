@@ -35,3 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 sitemap.xml
 sitemap-0.xml
+robots.txt
