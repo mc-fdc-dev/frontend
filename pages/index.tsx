@@ -10,9 +10,10 @@ export default function Home() {
                     <p className='text-2xl'>mc-fdc-devは主にapiやbotを運営しています。</p>
                 </div>
             </div>
-            <div className='pt-6 text-center'>
-                <h3 className='text-3xl text-center'>Bot</h3>
-                <div className="grid grid-cols-2">
+            <div className='pt-6 text-center m-4 mr-[10%] ml-[10%] p-8 border border-solid rounded-lg'>
+                <h3 className='m-4 text-3xl text-center'>Bot</h3>
+                <a href="" className='text-lg rounded bg-indigo-500 p-2 text-white'>導入する</a>
+                <div className="grid grid-cols-2 border rounded-lg m-8 p-4">
                     <div>
                         <h4 className='text-2xl font-medium'>ネタ系が多い</h4>
                         <p className='text-xl'>ネタ系が多いのでサーバが盛り上がります。</p>
@@ -22,7 +23,6 @@ export default function Home() {
                         <p className='text-xl'>niconicoとyoutube対応しています。</p>
                     </div>
                 </div>
-                <a href="" className='text-2xl rounded bg-indigo-500 p-2 text-white'>導入する</a>
             </div>
         </Base>
     )
