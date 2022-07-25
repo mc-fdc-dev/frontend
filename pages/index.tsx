@@ -10,7 +10,7 @@ export default function Home() {
                     <p className='text-2xl'>mc-fdc-devは主にapiやbotを運営しています。</p>
                 </div>
             </div>
-            <div className='text-center'>
+            <div className='pt-6 text-center'>
                 <h3 className='text-3xl text-center'>Bot</h3>
                 <div className="grid grid-cols-2">
                     <div>
