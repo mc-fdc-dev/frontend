@@ -20,7 +20,7 @@ export default function Staff() {
         {
             name: 'mc_fdc',
             role: 'Owner',
-            intro: '式守さん大好きキッズです。',
+            intro: '式守さん大好きだよ。',
         },
         {
             name: 'tasuren',
