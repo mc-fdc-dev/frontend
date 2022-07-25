@@ -1,6 +1,19 @@
 import Content from "../components/content"
 import Image from "next/image"
+import { ReactNode} from 'react'
 
+
+interface Props {
+    children: ReactNode;
+}
+
+function StaffMember({children}: Props) {
+    return (
+        <div className="border rounded text-center">
+            {children}
+        </div>
+    )
+}
 
 export default function Staff() {
     return (
@@ -8,10 +21,10 @@ export default function Staff() {
             <h2 className='text-3xl text-center'>スタッフ</h2>
             <p className='text-center text-xl'>スタッフは、サービスを改善するためにおります。</p>
             <div className='grid grid-cols-3'>
-                <div>
-                    <Image src="/images/staff/mc_fdc.png" alt="mc_fdc" width={200} height={200} />
-                    <p>mc_fdc(Owner)</p>
-                </div>
+                <StaffMember>
+                    <Image src="/images/staff/devon.png" alt="mc_fdc" width={200} height={200} />
+                    <p>devon(Member)</p>
+                </StaffMember>
             </div>
         </Content>
     )
