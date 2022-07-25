@@ -45,16 +45,6 @@ export default function Staff() {
                         <p>{staff.intro}</p>
                     </StaffMember>
                 ))}
-                <StaffMember>
-                    <Image src="/images/staff/mc_fdc.png" alt="mc_fdc" width={300} height={300} />
-                    <p className="text-xl">mc_fdc(Owner)</p>
-                    <p>式守さん大好きキッズです。</p>
-                </StaffMember>
-                <StaffMember>
-                    <Image src="/images/staff/tasuren.png" alt="tasuren" width={300} height={300} />
-                    <p className="text-xl">tasuren(Sub owner)</p>
-                    <p>未記入</p>
-                </StaffMember>
             </div>
         </Content>
     )
