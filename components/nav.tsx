@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export default function Nav() {
     const navs = [{
-        name: 'Contact',
+        name: 'contact',
         href: '/contact',
     }, {
-        name: 'About',
-        href: '/about',
+        name: 'staff',
+        href: '/staff',
     }]
     return (
         <nav>
