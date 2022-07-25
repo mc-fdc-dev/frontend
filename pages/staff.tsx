@@ -36,6 +36,11 @@ export default function Staff() {
             name: 'renorari',
             role: 'Developer',
             intro: '未記入',
+        },
+        {
+            name: 'Dyoll',
+            role: 'Developer',
+            intro: '未記入',
         }
     ]
     return (
