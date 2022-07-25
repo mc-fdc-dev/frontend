@@ -13,6 +13,9 @@ export default function Base({children}: Props) {
         <>
             <Head>
                 <title>mc-fdc-dev公式サイト</title>
+                <meta property='og:title' content='mc-fdc-dev公式サイト' />
+                <meta property='og:description' content='mc-fdc-devはapiやbotを提供します。' />
+                <meta property='og:type' content='website' />
             </Head>
             <div className="border-b-4 border-pink-300">
                 <div className="flex mx-8 justify-between my-2 items-center">
