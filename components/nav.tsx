@@ -8,6 +8,9 @@ export default function Nav() {
     }, {
         name: 'staff',
         href: '/staff',
+    }, {
+        name: 'terms',
+        href: '/terms',
     }]
     return (
         <nav>

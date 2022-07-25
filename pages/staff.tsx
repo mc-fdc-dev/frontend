@@ -30,7 +30,7 @@ export default function Staff() {
         {
             name: 'devon',
             role: 'Developer',
-            intro: '未記入',
+            intro: '以下省略',
         },
         {
             name: 'renorari',
