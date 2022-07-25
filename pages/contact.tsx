@@ -32,7 +32,7 @@ export default function Contact() {
                         <a className='text-xl' href="https://twitter.com/mc_fdc">https://twitter.com/mc_fdc</a>
                     </Content>
                     <Content title="Form">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9wAMFjgT9fQXQ-9jK-1h-0x-ah2RdDTBptSvL4f73FZ3UOA/viewform?embedded=true" width="640" height="539" frameBorder="0" marginHeight="0" marginWidth="0">読み込んでいます…</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9wAMFjgT9fQXQ-9jK-1h-0x-ah2RdDTBptSvL4f73FZ3UOA/viewform?embedded=true" width="640" height="539" frameBorder="0" marginHeight={0} marginWidth={0}>読み込んでいます…</iframe>
                     </Content>
                 </div>
             </div>
