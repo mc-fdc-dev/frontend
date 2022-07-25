@@ -9,7 +9,7 @@ export default function Nav() {
         name: 'staff',
         href: '/staff',
     }, {
-        name: 'terms',
+        name: 'terms of service',
         href: '/terms',
     }]
     return (
