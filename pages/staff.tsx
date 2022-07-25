@@ -9,7 +9,7 @@ interface Props {
 
 function StaffMember({children}: Props) {
     return (
-        <div className="border rounded text-center">
+        <div className="border rounded text-center m-4">
             {children}
         </div>
     )
