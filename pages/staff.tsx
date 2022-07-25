@@ -49,8 +49,7 @@ export default function Staff() {
         }
     ]
     return (
-        <Content>
-            <h2 className='text-3xl text-center'>スタッフ</h2>
+        <Content title="スタッフ">
             <p className='text-center text-xl'>スタッフは、サービスを改善するためにおります。</p>
             <div className='grid grid-cols-3'>
                 {staffs.map(staff => (
