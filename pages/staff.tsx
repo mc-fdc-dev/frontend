@@ -22,6 +22,10 @@ export default function Staff() {
             <p className='text-center text-xl'>スタッフは、サービスを改善するためにおります。</p>
             <div className='grid grid-cols-3'>
                 <StaffMember>
+                    <Image src="/images/staff/tasuren.png" alt="tasuren" width={200} height={200} />
+                    <p>tasuren(Sub owner)</p>
+                </StaffMember>
+                <StaffMember>
                     <Image src="/images/staff/devon.png" alt="mc_fdc" width={200} height={200} />
                     <p>devon(Member)</p>
                 </StaffMember>
