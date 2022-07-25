@@ -23,13 +23,13 @@ export default function Contact() {
                 <h2 className='text-3xl text-center'>Contact</h2>
                 <div className='grid grid-cols-2'>
                     <Content title="Email">
-                        <p className='text-xl'>support@mc-fdc.com</p>
+                        <a href='mailto:support@mc-fdc.com' className='text-xl text-[#b7c5ff]'>support@mc-fdc.com</a>
                     </Content>
                     <Content title="Discord">
-                        <a className='text-xl' href="https://discord.gg/4R83HQZGcV">https://discord.gg/4R83HQZGcV</a>
+                        <a className='text-xl text-[#b7c5ff]' href="https://discord.gg/4R83HQZGcV">https://discord.gg/4R83HQZGcV</a>
                     </Content>
                     <Content title="twitter">
-                        <a className='text-xl' href="https://twitter.com/mc_fdc">https://twitter.com/mc_fdc</a>
+                        <a className='text-xl text-[#b7c5ff]' href="https://twitter.com/mc_fdc">https://twitter.com/mc_fdc</a>
                     </Content>
                     <Content title="Form">
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9wAMFjgT9fQXQ-9jK-1h-0x-ah2RdDTBptSvL4f73FZ3UOA/viewform?embedded=true" width="640" height="539" frameBorder="0" marginHeight={0} marginWidth={0}>読み込んでいます…</iframe>
