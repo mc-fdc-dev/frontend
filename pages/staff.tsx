@@ -31,6 +31,11 @@ export default function Staff() {
             name: 'devon',
             role: 'Developer',
             intro: '未記入',
+        },
+        {
+            name: 'renorari',
+            role: 'Developer',
+            intro: '未記入',
         }
     ]
     return (
@@ -41,7 +46,7 @@ export default function Staff() {
                 {staffs.map(staff => (
                     <StaffMember key={staff.name}>
                         <Image src={`/images/staff/${staff.name}.png`} alt={staff.name} width={300} height={300} />
-                        <h3 className='text-xl'>{staff.name}</h3>
+                        <h3 className='text-xl'>{`${staff.name}(${staff.role})`}</h3>
                         <p>{staff.intro}</p>
                     </StaffMember>
                 ))}
