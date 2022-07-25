@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Nav from './nav'
-import { ReactNode } from "react";
+import { ReactNode } from "react"
+import Link from 'next/link'
 
 
 interface Props {
@@ -15,7 +16,7 @@ export default function Base({children}: Props) {
             </Head>
             <div className="border-b-4 border-pink-300">
                 <div className="flex mx-8 justify-between my-2 items-center">
-                    <h1 className='text-4xl'>mc-fdc-dev</h1>
+                    <Link href="/"><a><h1 className='text-4xl'>mc-fdc-dev</h1></a></Link>
                     <Nav />
                 </div>
             </div>
