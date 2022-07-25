@@ -35,7 +35,7 @@ export default function Staff() {
         {
             name: 'renorari',
             role: 'Developer',
-            intro: '未記入',
+            intro: '自分がしたいことあるけどそれが多すぎて多忙な人',
         },
         {
             name: 'Dyoll',
