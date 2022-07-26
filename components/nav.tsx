@@ -9,8 +9,8 @@ export default function Nav() {
         name: 'staff',
         href: '/staff',
     }, {
-        name: 'terms of service',
-        href: '/terms',
+        name: 'privacy policy',
+        href: '/privacy-policy',
     }]
     return (
         <nav>
