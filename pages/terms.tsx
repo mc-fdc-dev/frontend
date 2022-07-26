@@ -22,7 +22,7 @@ export default function Terms() {
         <Content title="Term of service">
             <div className="text-center">
                 <p className="text-right">作成日: 2022/7/26</p>
-                <div className="bg-pink-100">
+                <div className="bg-pink-100 rounded">
                     <h3 className="text-2xl">利用規約</h3>
                     <p className="text-xl">
                         この利用規約（以下，「本規約」といいます。）は，mc-fdc-dev（以下，「甲」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。
