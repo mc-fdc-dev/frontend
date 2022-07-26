@@ -51,6 +51,12 @@ export default function PricacyPolicy() {
                         <li>上記の利用目的に付随する目的</li>
                     </ol>
                 </Article>
+                <Article title="第4条（利用目的の変更）">
+                    <ol className="pl-8 list-decimal">
+                        <li>当組織は，利用目的が変更前と関連性を有すると合理的に認められる場合に限り，個人情報の利用目的を変更するものとします。</li>
+                        <li>利用目的の変更を行った場合には，変更後の目的について，当組織所定の方法により，ユーザーに通知し，または本ウェブサイト上に公表するものとします。</li>
+                    </ol>
+                </Article>
             </div>
         </Content>
     )
