@@ -9,11 +9,9 @@ interface Props {
 
 export default function Content({title, children}: Props) {
     return (
-        <Base>
-            <div className="mt-4 mx-[10%]">
-                <h2 className="text-3xl text-center">{title}</h2>
-                {children}
-            </div>
-        </Base>
+        <div className="mt-4 mx-[10%]">
+            <h2 className="text-3xl text-center">{title}</h2>
+            {children}
+        </div>
     )
 }

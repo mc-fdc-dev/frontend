@@ -3,7 +3,7 @@ import Base from '../components/base'
 
 export default function Home() {
     return (
-        <Base>
+        <div>
             <div className='bg-pink-100 py-44'>
                 <div className='text-center'>
                     <h2 className='text-4xl'>mc-fdc-dev</h2>
@@ -24,6 +24,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </Base>
+        </div>
     )
 }
