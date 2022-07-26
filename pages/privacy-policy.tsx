@@ -23,7 +23,7 @@ export default function PricacyPolicy() {
                 </p>
                 <h3 className="text-2xl">第3条（個人情報を収集・利用する目的）</h3>
                 <p>当組織が個人情報を収集・利用する目的は，以下のとおりです。</p>
-                <ol className="list-decimal">
+                <ol className="pl-2 list-decimal">
                     <li>当組織サービスの提供・運営のため</li>
                     <li>ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）</li>
                     <li>ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当組織が提供する他のサービスの案内のメールを送付するため</li>
