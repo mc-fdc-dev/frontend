@@ -4,7 +4,7 @@ import Content from "../components/content"
 export default function PricacyPolicy() {
     return (
         <Content title="プライバシーポリシー">
-            <div className="border rounded">
+            <div className="border rounded p-4">
                 <p>
                     mc-fdc-dev（以下，「当組織」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における,
                     ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
