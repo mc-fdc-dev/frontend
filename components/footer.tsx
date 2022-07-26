@@ -14,14 +14,14 @@ export default function Footer() {
     return (
         <footer className="bg-[#ff9eb0]">
             <div className="py-3">
-                <h4 className="text-2xl text-center">accounts</h4>
+                <h4 className="text-2xl text-center dark:text-black">accounts</h4>
                 <div className="flex justify-center">
                     {accounts.map(account => (
                         <a href={account.href} className="m-2" key={account.name}><Image src={`/images/footer/${account.src}`} width={32} height={32} alt={account.name} /></a>
                     ))}
                 </div>
             </div>
-            <p className='pb-8 text-center text-xl'>&copy; 2022 mc-fdc-dev</p>
+            <p className='pb-8 text-center text-xl dark:text-black'>&copy; 2022 mc-fdc-dev</p>
         </footer>
     )
 }

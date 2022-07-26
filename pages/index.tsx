@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <div>
-            <div className='bg-pink-100 py-44'>
+            <div className='bg-pink-100 py-44 dark:text-black'>
                 <div className='text-center'>
                     <h2 className='text-4xl'>mc-fdc-dev</h2>
                     <p className='text-2xl'>mc-fdc-devは主にapiやbotを運営しています。</p>
