@@ -144,6 +144,19 @@ export default function PricacyPolicy() {
                         </li>
                     </ol>
                 </Article>
+                <Article title="第9条（プライバシーポリシーの変更）">
+                    <ol className="pl-8 list-decimal">
+                        <li>本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変更することができるものとします。</li>
+                        <li>当組織が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生じるものとします。</li>
+                    </ol>
+                </Article>
+                <Article title="第10条（お問い合わせ窓口）">
+                    <p>本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。</p>
+                    <br />
+                    <p>メールアドレス: support@mc-fdc.com</p>
+                    <p>Discord: <a href="https://discord.gg/4R83HQZGcV">https://discord.gg/4R83HQZGcV</a></p>
+                </Article>
+                <p className="text-right">以上</p>
             </div>
         </Content>
     )
