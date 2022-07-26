@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Nav from './nav'
 import { ReactNode } from "react"
 import Link from 'next/link'
+import Footer from './footer'
 
 
 interface Props {
@@ -24,9 +25,7 @@ export default function Base({children}: Props) {
                 </div>
             </div>
             <main>{children}</main>
-            <footer className="bg-[#ff9eb0]">
-                <p className='py-8 text-center text-xl'>&copy; 2022 mc-fdc-dev</p>
-            </footer>
+            <Footer />
         </>
     )
 }

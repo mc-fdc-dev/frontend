@@ -1,6 +1,3 @@
-import Base from '../components/base'
-
-
 export default function Notfound() {
     return (
         <div className='mt-4 mx-[10%] py-[12.5%]'>

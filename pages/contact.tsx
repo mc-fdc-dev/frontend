@@ -1,4 +1,3 @@
-import Base from '../components/base'
 import { ReactNode } from 'react'
 
 
