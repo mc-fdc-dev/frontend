@@ -18,16 +18,14 @@ export default function Base({children}: Props) {
                 <meta property='og:description' content='mc-fdc-devはapiやbotを提供します。' />
                 <meta property='og:type' content='website' />
             </Head>
-            <body className='dark:bg-[#32353B] dark:text-white'>
-                <div className="border-b-4 border-pink-300">
-                    <div className="flex mx-8 justify-between my-2 items-center">
-                        <Link href="/"><a><h1 className='text-4xl'>mc-fdc-dev</h1></a></Link>
-                        <Nav />
-                    </div>
+            <div className="border-b-4 border-pink-300">
+                <div className="flex mx-8 justify-between my-2 items-center">
+                    <Link href="/"><a><h1 className='text-4xl'>mc-fdc-dev</h1></a></Link>
+                    <Nav />
                 </div>
-                <main>{children}</main>
-                <Footer />
-            </body>
+            </div>
+            <main>{children}</main>
+            <Footer />
         </>
     )
 }
