@@ -1,7 +1,7 @@
-import Content from '../components/content/'
+import Content from "../components/content"
 
 
-export function PricacyPolicy() {
+export default function PricacyPolicy() {
     return (
         <Content title="プライバシーポリシー">
             <div class="border rounded">
