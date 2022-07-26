@@ -16,7 +16,7 @@ export default function Nav() {
         <nav>
             <ul className='flex'>
                 {navs.map(nav => (
-                    <li key={nav.name} className="mx-4">
+                    <li key={nav.name} className="mx-4 invisible md:visible">
                         <Link href={nav.href}><a className='text-2xl'>{nav.name}</a></Link>
                     </li>
                 ))}
