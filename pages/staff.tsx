@@ -54,7 +54,7 @@ export default function Staff() {
             <div className='grid grid-cols-3'>
                 {staffs.map(staff => (
                     <StaffMember key={staff.name}>
-                        <Image src={`/images/staff/${staff.name}.png`} alt={staff.name} width={300} height={300} />
+                        <Image className="rounded-full" src={`/images/staff/${staff.name}.png`} alt={staff.name} width={300} height={300} />
                         <h3 className='text-xl'>{`${staff.name}(${staff.role})`}</h3>
                         <p>{staff.intro}</p>
                     </StaffMember>
