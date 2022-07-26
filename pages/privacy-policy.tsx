@@ -21,7 +21,7 @@ export default function PricacyPolicy() {
         <Content title="プライバシーポリシー">
             <p className="text-right">作成日: 2022/7/27</p>
             <p className="text-right">更新日: 2022/7/27</p>
-            <div className="border rounded p-8">
+            <div className="border rounded-md p-8">
                 <p>
                     mc-fdc-dev（以下，「当組織」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における,
                     ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
