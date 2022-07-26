@@ -64,7 +64,7 @@ export default function PricacyPolicy() {
                                 当社は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。
                                 ただし，個人情報保護法その他の法令で認められる場合を除きます。
                             </p>
-                            <ol className="list-decimal">
+                            <ol className="pl-8 list-decimal">
                                 <li>人の生命，身体または財産の保護のために必要がある場合であって，本人の同意を得ることが困難であるとき</li>
                                 <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって，本人の同意を得ることが困難であるとき</li>
                                 <li>
@@ -73,7 +73,7 @@ export default function PricacyPolicy() {
                                 </li>
                                 <li>
                                     <p>予め次の事項を告知あるいは公表し，かつ当社が個人情報保護委員会に届出をしたとき</p>
-                                    <ol className="list-decimal">
+                                    <ol className="pl-8 list-decimal">
                                         <li>利用目的に第三者への提供を含むこと</li>
                                         <li>第三者に提供されるデータの項目</li>
                                         <li>第三者への提供の手段または方法</li>
