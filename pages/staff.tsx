@@ -1,6 +1,6 @@
 import Content from "../components/content"
 import Image from "next/image"
-import { ReactNode} from 'react'
+import { ReactNode } from 'react'
 
 
 interface Props {
