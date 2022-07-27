@@ -51,7 +51,7 @@ export default function Staff() {
     return (
         <Content title="スタッフ">
             <p className='text-center text-xl'>スタッフは、サービスを改善するためにおります。</p>
-            <div className='grid grid-cols-3 md:grid-cols-1'>
+            <div className='grid grid-cols-1 md:grid-cols-3'>
                 {staffs.map(staff => (
                     <StaffMember key={staff.name}>
                         <Image className="rounded-full" src={`/images/staff/${staff.name}.png`} alt={staff.name} width={300} height={300} />
@@ -62,4 +62,3 @@ export default function Staff() {
             </div>
         </Content>
     )
-}
