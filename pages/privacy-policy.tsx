@@ -63,7 +63,7 @@ export default function PricacyPolicy() {
                     <ol className="pl-8 list-decimal">
                         <li>
                             <p>
-                                当社は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。
+                                当組織は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。
                                 ただし，個人情報保護法その他の法令で認められる場合を除きます。
                             </p>
                             <ol className="pl-8 list-decimal">
