@@ -155,8 +155,8 @@ export default function PricacyPolicy() {
                 <Article title="第10条（お問い合わせ窓口）">
                     <p>本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。</p>
                     <br />
-                    <p>メールアドレス: support@mc-fdc.com</p>
-                    <p>Discord: <a href="https://discord.gg/4R83HQZGcV">https://discord.gg/4R83HQZGcV</a></p>
+                    <p>メールアドレス: <a href="mailto:support@mc-fdc.com" className="text-[#b7c5ff]">support@mc-fdc.com</a></p>
+                    <p>Discord: <a href="https://discord.gg/4R83HQZGcV" className="text-[#b7c5ff]">https://discord.gg/4R83HQZGcV</a></p>
                 </Article>
                 <p className="text-right">以上</p>
             </div>
