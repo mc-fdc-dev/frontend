@@ -5,11 +5,11 @@ export default function Footer() {
     const accounts = [{
             name: 'github',
             href: 'https://github.com/mc-fdc-dev',
-            src: 'github.png',
+            src: 'github.webp',
     }, {
         name: 'twitter',
         href: 'https://twitter.com/mc_fdc',
-        src: 'twitter.png',
+        src: 'twitter.webp',
     }]
     return (
         <footer className="bg-[#ff9eb0]">
