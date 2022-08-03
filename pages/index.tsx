@@ -10,7 +10,7 @@ export default function Home() {
             <div className='pt-6 text-center m-4 mr-[10%] ml-[10%] p-8 border border-solid rounded-lg'>
                 <h3 className='m-4 text-3xl text-center'>Bot</h3>
                 <a href="" className='text-lg rounded bg-[#5865F2] p-2 text-white'>導入する</a>
-                <div className="grid grid-cols-2 border rounded-lg m-8 p-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 border rounded-lg m-8 p-4">
                     <div>
                         <h4 className='text-2xl font-medium'>ネタ系が多い</h4>
                         <p className='text-xl'>ネタ系が多いのでサーバが盛り上がります。</p>
