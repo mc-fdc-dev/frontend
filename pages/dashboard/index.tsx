@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Content from "../../components/content"
 import DataT from "../../interfaces/dashboard/data"
-import { PermissionsBitField } from "discord.js"
 
 
 async function fetcher(apiURL: string): Promise<DataT> {
@@ -29,8 +28,7 @@ function UserAndGuild() {
             <h3 className="text-3xl text-center">サーバー</h3>
             <div className="grid grid-cols-3">
                 {data.guilds.map(guild => {
-                    const bitPermissions = new PermissionsBitField(BigInt(guild.permissions));
-                    return bitPermissions.has(PermissionsBitField.Flags.Administrator) ? (
+                    guild.owner ? (
                         <div className="border rounded text-center m-4" key={guild.id}>
                             <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.webp?size=128`} width={128} height={128} />
                             <Link href={`https://mc-fdc.com/dashboard/${guild.id}`}><p className="text-center">{guild.name}</p></Link>
