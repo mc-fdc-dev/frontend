@@ -4,10 +4,11 @@ import Content from "../../components/content"
 import UserT from "../../interfaces/user"
 
 
-const fetcher: Fetcher<UserT, null> = (apiURL: string) => {
-    fetch(apiURL, {
+async default fetcher: Promise<JSON> {
+    const res = await fetch(apiURL, {
         credentials: 'include'
-    }).then(res => res.json())
+    })
+    return res.json()
 }
 
 function User() {
