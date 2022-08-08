@@ -4,7 +4,7 @@ import Content from "../../components/content"
 import UserT from "../../interfaces/user"
 
 
-async function fetcher: Promise<JSON> {
+async function fetcher(apiURL: string): Promise<JSON> {
     const res = await fetch(apiURL, {
         credentials: 'include'
     })
