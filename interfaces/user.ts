@@ -1,4 +1,4 @@
-public export default interface UserT {
+export default interface UserT {
     success: boolean;
     message: string | null;
     id: string;
