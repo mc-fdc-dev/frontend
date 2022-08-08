@@ -21,7 +21,7 @@ function User() {
     return (
         <div>
             <h3>{`${data.username}#${data.discriminator}`}</h3>
-            <Image className="rounded-full" alt={data.username} src={`https://cdn.discordapp.com/avatars/${data.id}/${data.avatar}.png`} width={300} height={300} />
+            <Image className="rounded-full" alt={data.username} src={`https://cdn.discordapp.com/avatars/${data.id}/${data.avatar}.png`} width={200} height={200} />
         </div>
     )
 }
