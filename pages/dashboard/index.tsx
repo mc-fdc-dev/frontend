@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Content from "../../components/content"
 
 
-const fetcher = (...args) => fetch(...args).then(res => res.json())
+const fetcher = (apiURL: string) => fetch(apiURL).then(res => res.json())
 
 function User() {
     const { user } = useSWR("https://api.mc-fdc.com/dashboard/me", fetcher)
