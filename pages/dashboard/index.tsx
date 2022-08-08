@@ -26,7 +26,7 @@ function UserAndGuild() {
             </div>
             <div>
                 {data.guilds.map(guild => (
-                    <div>
+                    <div key={guild.id}>
                         <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`} width={128} height={128} />
                         <p className="text-center">{guild.name}</p>
                     </div>
