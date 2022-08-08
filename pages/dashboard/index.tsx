@@ -6,13 +6,14 @@ import UserT from "../../interfaces/user"
 
 async function fetcher(apiURL: string): Promise<UserT> {
     const res = await fetch(apiURL, {
-        credentials: true
+        credentials: 'include'
     })
     return res.json()
 }
 
 function User() {
     const { data } = useSWR("https://api.mc-fdc.com/dashboard/me", fetcher)
+    console.log(data);
     if (!data) return <p>Loading</p>
     if (!data.success) {
         return <a className="text-lg rounded bg-[#5865F2] p-2 text-white" href="https://api.mc-fdc.com/dashboard/login">ログイン</a>
