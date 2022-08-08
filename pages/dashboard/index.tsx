@@ -21,7 +21,7 @@ function User() {
 
 export default function Dashboard() {
     return (
-        <Content>
+        <Content title="ダッシュボード">
             <User />
         </Content>
     )
