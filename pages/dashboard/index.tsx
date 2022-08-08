@@ -1,10 +1,10 @@
 import useSWR, { Fetcher } from 'swr'
 import Image from 'next/image'
 import Content from "../../components/content"
-import UserT from "../../interfaces/user"
+import DataT from "../../interfaces/dashboard/data"
 
 
-async function fetcher(apiURL: string): Promise<UserT> {
+async function fetcher(apiURL: string): Promise<DataT> {
     const res = await fetch(apiURL, {
         credentials: 'include'
     })
