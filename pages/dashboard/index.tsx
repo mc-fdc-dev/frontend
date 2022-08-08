@@ -1,6 +1,7 @@
 import useSWR from 'swr'
 import Image from 'next/image'
 import Content from "../../components/content"
+import UserT from "../../interfaces/user"
 
 
 const fetcher = (apiURL: string) => {
@@ -9,26 +10,8 @@ const fetcher = (apiURL: string) => {
     }).then(res => res.json())
 }
 
-interface UserT {
-    success: boolean;
-    message: string | null;
-    id: string;
-    username: string;
-    avatar: string;
-    avatar_decoration: string | null;
-    discriminator: string;
-    public_flags: number;
-    flags: number;
-    banner: string | null;
-    banner_color: string | null;
-    accent_color: string | null;
-    locale: string;
-    mfa_enabled: string;
-    premium_type: boolean;
-}
-
 function User() {
-    const { data: UserT } = useSWR("https://api.mc-fdc.com/dashboard/me", fetcher)
+    const { data: UserT } = useSWR<string[]>("https://api.mc-fdc.com/dashboard/me", fetcher)
     if (!data) return <p>Loading</p>
     if (!data.success) {
         return <a className="text-lg rounded bg-[#5865F2] p-2 text-white" href="https://api.mc-fdc.com/dashboard/login">ログイン</a>
