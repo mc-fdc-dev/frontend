@@ -1,5 +1,5 @@
-import UserT from "./user.ts"
-import GuildT from "./guild.ts"
+import UserT from "./user"
+import GuildT from "./guild"
 
 
 export default interface DataT {
