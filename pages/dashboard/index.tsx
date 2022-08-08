@@ -27,14 +27,14 @@ function UserAndGuild() {
             </div>
             <h3 className="text-3xl text-center">サーバー</h3>
             <div className="grid grid-cols-3">
-                {data.guilds.map(guild => (
+                {data.guilds.map(guild => {
                     guild.owner ? (
                         <div className="border rounded text-center m-4" key={guild.id}>
                             <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.webp?size=128`} width={128} height={128} />
                             <Link href={`https://mc-fdc.com/dashboard/${guild.id}`}><p className="text-center">{guild.name}</p></Link>
                         </div>
                     ) : (null)
-                ))}
+                })}
             </div>
         </div>
     )
