@@ -1,10 +1,12 @@
 import { useRouter } from 'next/router'
+import Content from "../components/content"
 
 
 export default function Main() {
     const router = useRouter()
-    console.log(router.query.guildid)
     return (
-        <p>hello</p>
+        <Content title={ダッシュボード}>
+            <p>{router.query.guildid}</p>
+        </Content>
     )
 }
