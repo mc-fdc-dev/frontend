@@ -33,7 +33,7 @@ function UserAndGuild() {
                             <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png?size=128`} width={128} height={128} />
                             <Link href={`https://mc-fdc.com/dashboard/${guild.id}`}><p className="text-center">{guild.name}</p></Link>
                         </div>
-                    ) : ()
+                    ) :
                 ))}
             </div>
         </div>
