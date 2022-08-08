@@ -1,6 +1,6 @@
 import useSWR from 'swr'
 import Image from 'next/image'
-import Content from "../components/content"
+import Content from ".../components/content"
 
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
