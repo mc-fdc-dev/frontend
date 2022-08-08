@@ -6,7 +6,7 @@ import UserT from "../../interfaces/user"
 
 async function fetcher(apiURL: string): Promise<UserT> {
     const res = await fetch(apiURL, {
-        credentials: 'include'
+        credentials: true
     })
     return res.json()
 }
