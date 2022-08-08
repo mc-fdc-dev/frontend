@@ -4,7 +4,7 @@ import Content from "../../components/content"
 import UserT from "../../interfaces/user"
 
 
-const fetcher<Fetcher> = (apiURL: string) => {
+const fetcher: Fetcher<UserT> = (apiURL: string) => {
     fetch(apiURL, {
         credentials: 'include'
     }).then(res => res.json())
