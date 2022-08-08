@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import Content from "../components/content"
+import Content from "../../../components/content"
 
 
 export default function Main() {
