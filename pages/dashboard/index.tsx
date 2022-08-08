@@ -19,7 +19,7 @@ function User() {
     }
     return (
         <div className="flex flex-row">
-            <Image className="rounded-full" alt={data.username} src={`https://cdn.discordapp.com/avatars/${data.id}/${data.avatar}.png?size=256`} width={256} height={256} />
+            <Image className="rounded-full" alt={data.username} src={`https://cdn.discordapp.com/avatars/${data.id}/${data.avatar}.png?size=128`} width={128} height={128} />
             <h3>{`${data.username}#${data.discriminator}`}</h3>
         </div>
     )
