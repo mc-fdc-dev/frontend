@@ -1,4 +1,4 @@
-import useSWR, { Fetcher } from 'swr'
+import useSWR from 'swr'
 import Image from 'next/image'
 import Link from 'next/link'
 import Content from "../../components/content"
