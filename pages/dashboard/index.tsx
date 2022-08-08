@@ -22,7 +22,7 @@ function UserAndGuild() {
     return (
         <div>
             <div className="flex flex-row">
-                <Image className="rounded-full" alt={user.username} src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=128`} width={128} height={128} />
+                <Image className="rounded-full" alt={user.username} src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.webp?size=128`} width={128} height={128} />
                 <h3>{`${user.username}#${user.discriminator}`}</h3>
             </div>
             <h3 className="text-3xl text-center">サーバー</h3>
@@ -30,7 +30,7 @@ function UserAndGuild() {
                 {data.guilds.map(guild => (
                     guild.owner ? (
                         <div className="border rounded text-center m-4" key={guild.id}>
-                            <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png?size=128`} width={128} height={128} />
+                            <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.webp?size=128`} width={128} height={128} />
                             <Link href={`https://mc-fdc.com/dashboard/${guild.id}`}><p className="text-center">{guild.name}</p></Link>
                         </div>
                     ) : (null)
