@@ -17,7 +17,6 @@ export default function Base({children}: Props) {
                 <meta property='og:title' content='mc-fdc-dev公式サイト' />
                 <meta property='og:description' content='mc-fdc-devはapiやbotを提供します。' />
                 <meta property='og:type' content='website' />
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715826596324259" crossOrigin="anonymous" />
             </Head>
             <div className="border-b-4 border-pink-300">
                 <div className="flex mx-8 justify-between my-2 items-center">
