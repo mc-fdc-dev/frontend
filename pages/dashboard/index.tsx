@@ -18,7 +18,7 @@ function User() {
         return <a className="text-lg rounded bg-[#5865F2] p-2 text-white" href="https://api.mc-fdc.com/dashboard/login">ログイン</a>
     }
     return (
-        <div className="flex">
+        <div className="flex flex-row">
             <Image className="rounded-full" alt={data.username} src={`https://cdn.discordapp.com/avatars/${data.id}/${data.avatar}.png?size=256`} width={256} height={256} />
             <h3>{`${data.username}#${data.discriminator}`}</h3>
         </div>
