@@ -15,7 +15,7 @@ function User() {
     const { data } = useSWR("https://api.mc-fdc.com/dashboard/me", fetcher)
     console.log(data);
     if (!data) return <p>Loading</p>
-    if (!data.success) {
+    if (!data.status) {
         return <a className="text-lg rounded bg-[#5865F2] p-2 text-white" href="https://api.mc-fdc.com/dashboard/login">ログイン</a>
     }
     return (
