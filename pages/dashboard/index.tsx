@@ -11,7 +11,7 @@ async function fetcher(apiURL: string): Promise<DataT> {
     return res.json()
 }
 
-function User() {
+function UserAndGuild() {
     const { data } = useSWR("https://api.mc-fdc.com/dashboard/me", fetcher)
     if (!data) return <p>Loading</p>
     if (!data.status) {
@@ -19,9 +19,19 @@ function User() {
     }
     const user = data.user
     return (
-        <div className="flex flex-row">
-            <Image className="rounded-full" alt={user.username} src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=128`} width={128} height={128} />
-            <h3>{`${user.username}#${user.discriminator}`}</h3>
+        <div>
+            <div className="flex flex-row">
+                <Image className="rounded-full" alt={user.username} src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=128`} width={128} height={128} />
+                <h3>{`${user.username}#${user.discriminator}`}</h3>
+            </div>
+            <div>
+                {data.guilds.map(guild => (
+                    <div>
+                        <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`} width={128} height={128} />
+                        <p className="text-center">{guild.name}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
@@ -29,7 +39,7 @@ function User() {
 export default function Dashboard() {
     return (
         <Content title="ダッシュボード">
-            <User />
+            <UserAndGuild />
         </Content>
     )
 }
