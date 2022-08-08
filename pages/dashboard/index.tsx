@@ -1,17 +1,17 @@
-import useSWR from 'swr'
+import useSWR, { Fetcher } from 'swr'
 import Image from 'next/image'
 import Content from "../../components/content"
 import UserT from "../../interfaces/user"
 
 
-const fetcher = (apiURL: string) => {
+const fetcher<Fetcher> = (apiURL: string) => {
     fetch(apiURL, {
         credentials: 'include'
     }).then(res => res.json())
 }
 
 function User() {
-    const { data: UserT } = useSWR<string[]>("https://api.mc-fdc.com/dashboard/me", fetcher)
+    const { data } = useSWR("https://api.mc-fdc.com/dashboard/me", fetcher)
     if (!data) return <p>Loading</p>
     if (!data.success) {
         return <a className="text-lg rounded bg-[#5865F2] p-2 text-white" href="https://api.mc-fdc.com/dashboard/login">ログイン</a>
