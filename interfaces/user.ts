@@ -1,5 +1,5 @@
 export default interface UserT {
-    success: boolean;
+    status: boolean;
     message: string | null;
     id?: string;
     username?: string;
