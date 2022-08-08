@@ -1,6 +1,4 @@
 export default interface UserT {
-    status: boolean;
-    message: string | null;
     id?: string;
     username?: string;
     avatar?: string;
