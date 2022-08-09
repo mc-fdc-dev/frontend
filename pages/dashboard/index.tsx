@@ -31,8 +31,10 @@ function UserAndGuild() {
                     guild.owner ? (
                         <div className="border rounded text-center m-4" key={guild.id}>
                             <Link href={`https://mc-fdc.com/dashboard/${guild.id}`}>
-                                <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.webp?size=128`} width={128} height={128} />
-                                <p className="text-center">{guild.name}</p>
+                                <a>
+                                    <Image className="rounded-full" alt={guild.name} src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.webp?size=128`} width={128} height={128} />
+                                    <p className="text-center">{guild.name}</p>
+                                </a>
                             </Link>
                         </div>
                     ) : (null)
