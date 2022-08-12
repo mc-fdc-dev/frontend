@@ -1,5 +1,4 @@
 import { ReactNode } from "react"
-import Base from "./base"
 
 
 interface Props {
