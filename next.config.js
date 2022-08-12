@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
-const withMarkdoc = require('@markdoc/next.js')()
-
-module.exports = withMarkdoc({
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdoc'],
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+})
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   images: {
     domains: ['cdn.discordapp.com'],
   },
