@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@markdoc/next.js": "^0.1.6",
     "next": "12.2.2",
     "next-sitemap": "^3.1.12",
     "react": "18.2.0",
