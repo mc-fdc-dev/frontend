@@ -3,7 +3,7 @@ import { promises } from "fs"
 
 
 export async function getStaticProps() {
-    await promises.readdir("../../articles")
+    const articles = await promises.readdir("./articles")
     return {
         props: {
             posts: []
