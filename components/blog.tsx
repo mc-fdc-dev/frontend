@@ -15,7 +15,7 @@ interface Props {
 
 export default function BlogContent({meta, children}, Props) {
     return (
-        <Content title=meta.title>
+        <Content title={meta.title}>
             {children}
         </Content>
     )
