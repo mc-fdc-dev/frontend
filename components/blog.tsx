@@ -2,13 +2,13 @@ import Content from "./content"
 import { ReactNode } from "react"
 
 
-type MetaT {
+type MetaT = {
     title: string;
     description: string;
     author: string;
 }
 
-interface Props {
+interface Props = {
     meta: MetaT;
     children: ReactNode;
 }
