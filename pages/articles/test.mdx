@@ -1,7 +1,12 @@
----
-title: これテスト
-description: これテストだから
-author: mc_fdc
----
+import BlogContent from "../../components/blog"
+
+
+const meta = {
+    title: "test",
+    description: "Testing",
+    author: "mc_fdc",
+}
 
 これテストだっつってんだよ()
+
+export default ({ children }) => <BlogContent meta={meta}>{children}</BlogContent>
