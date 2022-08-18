@@ -15,7 +15,7 @@ interface Props {
 
 export default function Article({meta, children}: Props) {
     return (
-        <Content title="Article">
+        <Content title={meta.title}>
             <article className="prose">
                 {children}
             </article>
