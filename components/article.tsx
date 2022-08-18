@@ -25,6 +25,6 @@ export default function Article({meta, children}: Props) {
             <article className="prose">
                 {children}
             </article>
-        </Content>
+        </div>
     )
 }
