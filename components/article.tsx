@@ -1,4 +1,5 @@
 import Content from "./content"
+import Image from "next/image"
 import { ReactNode } from "react"
 
 
