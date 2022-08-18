@@ -17,7 +17,7 @@ interface Props {
 export default function Article({meta, children}: Props) {
     return (
         <Content title={meta.title}>
-            <div>
+            <div className="flex">
                 <Image className="rounded-full" src={`/images/staff/${meta.author}.webp`} alt={meta.author} width={30} height={30} />
                 <p>作成者: {meta.author}</p>
             </div>
