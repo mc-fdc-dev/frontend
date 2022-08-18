@@ -22,7 +22,7 @@ export default function Article({meta, children}: Props) {
                 <Image className="rounded-full" src={`/images/staff/${meta.author}.webp`} alt={meta.author} width={30} height={30} />
                 <p>作成者: {meta.author}</p>
             </div>
-            <article className="prose pt-4">
+            <article className="prose pt-8">
                 {children}
             </article>
         </div>
