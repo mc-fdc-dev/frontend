@@ -13,7 +13,7 @@ interface Props {
     children: ReactNode;
 }
 
-export default function Article({meta, children}, Props) {
+export default function Article({meta, children}: Props) {
     return (
         <Content title="Article">
             <article className="prose">
