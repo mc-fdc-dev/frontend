@@ -7,7 +7,7 @@ interface MetaT {
     title: string;
     description: string;
     author: string;
-    time: string:
+    time: string;
 }
 
 interface Props {
