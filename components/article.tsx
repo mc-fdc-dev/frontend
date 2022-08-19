@@ -24,7 +24,7 @@ export default function Article({meta, children}: Props) {
                     <Image className="rounded-full" src={`/images/staff/${meta.author}.webp`} alt={meta.author} width={45} height={45} />
                     <small className="py-[2.5px]">{meta.author}</small>
                 </div>
-                <small>{meta.time}</small>
+                <small className="text-gray-500">{meta.time}</small>
             </div>
             <article className="prose pt-8">
                 {children}
