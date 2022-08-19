@@ -2,7 +2,7 @@ import { promises as fs } from 'fs'
 import Content from "../../components/content"
 
 export async function getStaticProps() {
-    var files = await fs.readdir("./")
+    var files = await fs.readdir("./", { withFileTypes: true })
     files = files.filter(file => {
         return file.isFile() && file.name.endsWith(".md")
     })
