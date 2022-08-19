@@ -22,9 +22,9 @@ export default function Article({meta, children}: Props) {
             <div className="flex justify-between">
                 <div className="flex py-2">
                     <Image className="rounded-full" src={`/images/staff/${meta.author}.webp`} alt={meta.author} width={45} height={45} />
-                    <p className="py-[2.5px]">{meta.author}</p>
+                    <small className="py-[2.5px]">{meta.author}</small>
                 </div>
-                <p>{meta.time}</p>
+                <small>{meta.time}</small>
             </div>
             <article className="prose pt-8">
                 {children}
