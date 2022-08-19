@@ -1,4 +1,5 @@
 import { promises as fs } from 'fs'
+import Content from "../../components/content"
 
 export async function getStaticProps() {
     const articles = await fs.readdir("./").filter(file => {
@@ -12,4 +13,14 @@ export async function getStaticProps() {
             articles: articles
         }
     }
+}
+
+export default Index({ articles }) {
+    return (
+        <Content title="記事一覧">
+            {articles.map(article => (
+                <p key={article.title}>{article.title}</p>
+            ))}
+        </Content>
+    )
 }
