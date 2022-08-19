@@ -15,7 +15,7 @@ export async function getStaticProps() {
     }
 }
 
-export default Index({ articles }) {
+export default function Index({ articles }) {
     return (
         <Content title="記事一覧">
             {articles.map(article => (
